@@ -1,44 +1,4 @@
-<?php
-//if "email" variable is filled out, send email
-  if (isset($_REQUEST['email']))  {
-  
-  //Email information
-  $admin_email = "contact_kivos@yahoo.com";
-  $email = $_REQUEST['email'];
-  $subject = $_REQUEST['subject'];
-  $comment = $_REQUEST['comment'];
-  
-  //send email
-  mail($admin_email, "$subject", $comment, "From:" . $email);
-  
-  //Email response
-  echo "Thank you for contacting us!";
-  }
-  
-  //if "email" variable is not filled out, display the form
-  else  {
-?>
 
- <form method="post">
- <P>
-
-  Email: <input name="email" type="text" />
-</p>
-<p>
-  Subject: <input name="subject" type="text" />
-</p>
-<p>
-  Message:
-
-  <textarea name="comment" rows="15" cols="40"></textarea>
-  </p>
-
-  <input type="submit" value="Submit" />
-  </form>
-  
-<?php
-  }
-?>
 
 <!doctype html>
 <html>
@@ -72,5 +32,13 @@ title{align = "center"}
 <h1 align = "center">Send us an e-mail !</h1>
 <p> Ask your questions and our team will reply to you! </p>
 
+<form action="http://formspree.io/contact_kivos@yahoo.com" method = "POST">
+<p>your e-mail</p>
+<input type="email" name="_replyto">
+<p>your message</p>
+<textarea   name="body">
+</textarea>
+<input type="submit" value="Send">
+</form>
 </body>
 </html>
