@@ -48,12 +48,46 @@ ul li ul li{
             display: none;}
 ul li:hover ul li{
             display: block;}
-</style>
+			
+#test {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
 
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+</style>
+<div id="test">  
 <title align="center">Kivos</title>
 </head>
 
-<body background = "background.jpg">
+<body background = "background.jpg" bgproperties="fixed">
 <h3 align="center"> DLineRush INC. presents </h3>
 <h1 align="center"> Kivos </h1>
 <p align="center"> An adventure without edges. </p>
@@ -70,7 +104,7 @@ ul li:hover ul li{
         <ul>
 		 <li><a href = "multiplayer.html">The Multiplayer</a></li>
 		 <li><a href ="#">Challenges</a></li>
-		 <li><a href ="#">Hidden features</a></li>
+		 <li><a href ="Hidden.html">Hidden features</a></li>
 		</ul>
     </li>
   <li><a href ="#">The Team</a>
@@ -104,5 +138,5 @@ ul li:hover ul li{
 <a href ="http://github.com"><img src ="Github.png" align ="center" height = "5%" width = "10%" hspace ="20"></a> </img>
 <a href ="https://unity3d.com"><img src ="Unity.png" align = "right" height = "10%" width = "30%" hspace ="20"></a> </img>
 </body>
-
+</div>
 </html>

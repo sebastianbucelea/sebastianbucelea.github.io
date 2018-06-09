@@ -30,7 +30,42 @@ img{  border-radius: 50%;
        clear: both;
 	   margin: 0 auto;
 	   float: left;}
+	   #test  {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 </style>
+<div id = "test">
 </head>
 <body background = "background.jpg">
 <h1 align = "center">Contact us!</h1>
@@ -80,5 +115,5 @@ E-mail: mederic.carriat@epita.fr
 </p>
 </div>
 </body>
-
+</div>
 </html>
